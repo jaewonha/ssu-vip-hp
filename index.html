@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP Lab · Soongsil University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="media/favicon.png">
+  <style>
+    .hero-container {
+      display: grid;
+      grid-template-columns: 26% 5% 6% 16% 12% 35%;
+      grid-template-rows: 33% 16% 15% 36%;
+      width: 100%;
+      aspect-ratio: 1000 / 500;
+      container-type: inline-size;
+    }
+    .hero-item {
+      margin: 0.4cqw;
+      background-color: var(--tile);
+      color: var(--text-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.65cqw;
+      font-weight: 500;
+      border-radius: 8px;
+      line-height: 1.25;
+    }
+    .hero-img {
+      background-color: #fff;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .hero-center {
+      font-size: 2.6cqw;
+      font-weight: 700;
+      background: radial-gradient(ellipse at top left, #5bc4c2 25%, transparent 70%),
+                  radial-gradient(ellipse at top right, #00a3c9 25%, transparent 70%),
+                  radial-gradient(ellipse at bottom left, #8fd6d4 25%, transparent 50%),
+                  radial-gradient(ellipse at bottom right, #00668c 25%, transparent 700%);
+      color: white;
+      letter-spacing: 0.02em;
+    }
+    .hero-center small {
+      display: block;
+      margin-top: 0.8cqw;
+      font-size: 1.4cqw;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+    .hero-topics {
+      font-weight: 700;
+      background: linear-gradient(180deg, #5bc4c2, #00a3c9, #00668c);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-highlight {
+      background-color: #5bc4c2;
+      color: #fff;
+      margin-right: 3px;
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-brand" aria-label="숭실대학교 VIP 연구실 (Visual Intelligence and Platform Lab, Soongsil University)">
+      <img src="media/logo.png" alt="" aria-hidden="true">
+      <h1>VIP <span>Lab</span></h1>
+    </a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="people.html">People</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <div class="hero-container">
+      <div class="hero-item hero-img" style="grid-column: span 3; background-image: url('media/publications/ral18-ranus.png');"></div>
+      <div class="hero-item hero-img" style="grid-column: span 2; background-image: url('media/publications/tip16-object-extraction.jpg');"></div>
+      <div class="hero-item hero-img" style="grid-row: span 2; background-image: url('media/publications/kros17-pose-estimation.jpg');"></div>
+      <div class="hero-item hero-img" style="grid-row: span 2; background-image: url('media/publications/ral20-salient-view.png');"></div>
+      <div class="hero-item hero-center" style="grid-column: span 4; grid-row: span 2;"><div>VISUAL INTELLIGENCE<br>&amp; PLATFORM<small>Soongsil University</small></div></div>
+      <div class="hero-item"><div><span class="hero-highlight">EFFICIENT</span>DEEP LEARNING</div></div>
+      <div class="hero-item hero-img" style="grid-column: span 2; background-image: url('media/publications/cgf17-salient-view.jpg');"></div>
+      <div class="hero-item" style="grid-column: span 2;"><div class="hero-topics">AUTONOMOUS DRIVING<br>WORLD MODELS<br>DIFFUSION MODELS<br>MULTIMODALITY<br>WIRELESS SENSING<br>FINANCIAL AI</div></div>
+      <div class="hero-item hero-img" style="grid-column: span 2; background-image: url('media/publications/icip11-object-extraction.jpg');"></div>
+    </div>
+    <p>Welcome to VIP Lab. at Soongsil University, South Korea. We are working on visual intelligence and its applications to automated systems. We cover a variety of issues in the field of image processing, computer vision &amp; graphics, robotics, and machine learning. Our research can be applied to practical software and lab-to-real platforms such as autonomous vehicles, smart home &amp; factory, medical applications, intelligent semiconductors, and any other AI systems.</p>
+  </section>
+
+  <section class="collapsible" data-more="Show all news">
+    <h2>News</h2>
+    <dl class="news">
+      <dt>2026.11</dt><dd>We are expanding our research across <b>Machine Intelligence</b>, and updating our homepage accordingly (<a href="http://mi.ssu.ac.kr" target="_blank">mi.ssu.ac.kr</a>).</dd>
+      <dt>2026.11</dt><dd><b>Jaewon Ha</b>, CEO of DENTUS, is participating in our lab's research &amp; development of Financial AI. Welcome!</dd>
+      <dt>2026.10</dt><dd>Jongyun Hur's "Evaluating Latent-Space Mixture-of-Experts in Small Vision-Language Models" and Yu-Jin Kim's "A Study of MIL Aggregation Methods for WSI-based Survival Prediction" have been accepted to the <b>Annual Conference of KIPS (ACK) 2026</b>.</dd>
+      <dt>2026.10</dt><dd>Our international collaborative research, "Public Enterprise Decline and the Industrial Replacement Gap in Nepal: Evidence from Product-Level Trade Data and Explainable Machine Learning," by Anisha Dhakal, Sabina Ghimire, and Deepak Ghimire, has been published in <b>Sustainability</b>.</dd>
+      <dt>2026.10</dt><dd>Congrats! Haun Jo's work, "TopoUrbanBench: Group-Structural Compliance Evaluation for Urban Robot Navigation," has been accepted to the <b>Conference on Robot Learning (CoRL) 2026</b>.</dd>
+      <dt>2026.10</dt><dd>Congrats! Prof. Ahrii Kim's work, "FACET at WMT 2026 Automated Translation Quality Evaluation Task," has been accepted to the <b>Eleventh Conference on Machine Translation (EMNLP/WMT) 2026</b>.</dd>
+      <dt>2026.10</dt><dd>Congrats! Prof. Ahrii Kim's two papers, "The Blindness of Document-Level Translation Evaluation" and "Discourse Dependency: A Continuous Criterion for Translation Difficulty," have both been accepted to the Main Conference of <b>EMNLP 2026</b>.</dd>
+      <dt>2026.09</dt><dd>Undergraduate researcher Seo-hyeon Park has been selected as a scholarship recipient of the Gyeonggi Provincial Association.</dd>
+      <dt>2026.09</dt><dd>Congrats! Dr. Jaehyun So's talking head research has been selected for the <b>Basic Research Program of the National Research Foundation of Korea (NRF)</b>.</dd>
+      <dt>2026.09</dt><dd>Our lab won two 1st places and a runner-up in <b>ECCVW26 challenges</b>: Dayoung Kil (1st, MUMU track) and Jungyoon Lee, Gyuil Lim, and Do-Eon Kim (1st, MeViS-Text track) at the 8th Large-scale Video Object Segmentation Challenge, and Jungyoon Lee and Do-Eon Kim (runner-up, Track 5) at the 10th AI City Challenge.</dd>
+      <dt>2026.06</dt><dd>Congratulations! Do-eon and Jungyoon's work, "WiFi-JEPA: Self-supervised Learning for WiFi-CSI 3D Human Pose Estimation," has been accepted for presentation at the <b>European Conference on Computer Vision (ECCV) 2026</b>.</dd>
+      <dt>2026.06</dt><dd>Dayoung Kil achieved 2nd place in the AI Generated Images Detection track at the <b>CVPR 2026</b> competition.</dd>
+      <dt>2026.06</dt><dd>An end-to-end model developed by team leader Jungyoon Lee and four other teammates finished 2nd place in the final round of the <b>A1 Autonomous Driving Competition 2026</b>.</dd>
+      <dt>2026.06</dt><dd>Haun Jo successfully completed a master's internship at <b>NAVER LABS</b>.</dd>
+      <dt>2026.05</dt><dd>Three papers were accepted to <b>ICROS 2026</b>. Na-hyeon Kwon's research won the Gold Prize in the Smart Home Appliances category at the 23rd Embedded Software Competition, and Yeon-jae Jeong's research won the Grand Prize at the 43rd Hyungnam Science Award. Congratulations to all!</dd>
+      <dt>2025.11</dt><dd>Jungyoon Lee won the 1st place at the autonomous driving AI competition (semantic segmentation) and received the <b>Minister of Science and ICT Award</b>.</dd>
+      <dt>2025.11</dt><dd>Dr. Ahrii Kim and Dr. Jaehyun So joined our lab. Welcome to our research group!</dd>
+      <dt>2025.11</dt><dd>Abdul Waheed Aagha joined our lab starting from his 4th year of Ph.D.</dd>
+      <dt>2025.09</dt><dd>Congratulations! Deepak and Dayoung's work, "One-Cycle Structured Pruning via Stability-Driven Subnetwork Search," has been accepted for presentation at the <b>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2026</b>.</dd>
+      <dt>2025.06</dt><dd>Dayoung Kil achieved 4th place in the Mobile AI Competition (image classification) at the <b>CVPR 2025 Workshop</b>.</dd>
+      <dt>2025.03</dt><dd>Jungyoon Lee joined VIP Lab. as M.S. candidate.</dd>
+      <dt>2024.03</dt><dd>Dayoung Kil started her Ph.D. in efficient deep learning.</dd>
+      <dt>2024.03</dt><dd>Ha-un Jo and Do-eon Kim joined VIP Lab. as M.S. candidates.</dd>
+      <dt>2023.11</dt><dd>Our paper was accepted in Journal of Institute of Control, Robotics and Systems.</dd>
+      <dt>2023.10</dt><dd>Our paper was accepted in IEEE Access.</dd>
+      <dt>2023.08</dt><dd>Our papers were accepted in IVC, JEET, IEEE Access, and Electronics respectively.</dd>
+      <dt>2023.03</dt><dd>SSU VIP Lab. was located at 1301 Hyungnam Memorial Engineering Building.</dd>
+      <dt>2023.01</dt><dd>Our paper was accepted in Applied Sciences.</dd>
+      <dt>2022.10</dt><dd>Dayoung presented her work in the International Conf. on Control, Automation and Systems. Her paper was also accepted in Journal of Institute of Control, Robotics and Systems.</dd>
+      <dt>2022.08</dt><dd>Our paper was accepted in the Journal of Institute of Control, Robotics and Systems.</dd>
+      <dt>2022.03</dt><dd>Our paper was accepted in Electronics.</dd>
+      <dt>2022.03</dt><dd>Dayoung Kil and Jun-yong Kim joined VIP Lab. as M.S. candidates.</dd>
+      <dt>2022.02</dt><dd>Jun-yong's two papers were accepted in the Journal of Institute of Control, Robotics and Systems.</dd>
+      <dt>2022.01</dt><dd>Dr. Deepak Ghimire joined VIP Lab. as a research professor.</dd>
+      <dt>2021.11</dt><dd>Jae-hoon presented his work in the 7th International Conference on Next Generation Computing.</dd>
+      <dt>2021.09</dt><dd>Jae-hoon Jang joined VIP Lab. as a M.S. candidate.</dd>
+      <dt>2020.09</dt><dd>Visual Intelligence and Platform (VIP) Lab. at Soongsil University was founded.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <p>Copyright 2020&ndash;2026 SSU VIP Lab. All rights reserved.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

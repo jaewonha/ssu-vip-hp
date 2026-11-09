@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research · VIP Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="media/favicon.png">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-brand" aria-label="숭실대학교 VIP 연구실 (Visual Intelligence and Platform Lab, Soongsil University)">
+      <img src="media/logo.png" alt="" aria-hidden="true">
+      <h1>VIP <span>Lab</span></h1>
+    </a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="people.html">People</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="areas">
+    <h2 class="page-title">Our Research Areas</h2>
+    <p class="page-lead">We study visual intelligence and its applications to automated systems &mdash; from efficient and generative deep learning to autonomous driving, wireless sensing, language, and real-world AI applications.</p>
+
+    <!-- Theme 1 -->
+    <h3 class="theme-title">Efficient &amp; Generative Deep Learning</h3>
+    <div class="area-grid">
+      <article class="area-card">
+        <div class="area-figure"><img src="media/research/ocspruner-wacv26.png" alt="One-Cycle Structured Pruning pipeline"></div>
+        <div class="area-body">
+          <h4>Efficient Deep Learning</h4>
+          <p class="desc">Deploying deep networks on mobile, embedded, and intelligent-semiconductor platforms requires models that are both accurate and lightweight. We develop structured pruning and model compression methods that find compact, stable sub-networks during training, reducing computation and memory while preserving accuracy. Our recent One-Cycle Structured Pruning (OCSPruner) removes the need for separate pre-training and fine-tuning stages by searching for a stable sub-network within a single training cycle.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>One-Cycle Structured Pruning via Stability-Driven Subnetwork Search, <i>WACV 2026</i></li>
+            <li>Loss-aware Automatic Selection of Structured Pruning Criteria, <i>IVC 2023</i></li>
+            <li>Magnitude and Similarity Based Variable Rate Filter Pruning, <i>Applied Sciences 2023</i></li>
+            <li>A Survey on Efficient CNNs and Hardware Acceleration, <i>Electronics 2022</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+      <article class="area-card">
+        <div class="area-figure placeholder"><i class="fa-solid fa-layer-group"></i><span>Efficient VLMs</span></div>
+        <div class="area-body">
+          <h4>Efficient Multimodal Understanding</h4>
+          <p class="desc">Vision-language models (VLMs) unify images, video, and text but are expensive to run. We study how to make multimodal understanding efficient &mdash; reasoning-aware token pruning, query-guided restoration, and latent-space mixture-of-experts for small VLMs &mdash; so that unified multimodal models can run under tight compute budgets. Our EUMU approach won 1st place in the MUMU track of the 8th Large-scale Video Object Segmentation Challenge (ECCV 2026 Workshop).</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>Efficient Unified Multimodal Understanding (EUMU), <i>ECCV Workshop 2026, 1st Place</i></li>
+            <li>Evaluating Latent-Space Mixture-of-Experts in Small Vision-Language Models, <i>ACK 2026</i></li>
+            <li>Patent: 추론 인식 프루닝 및 질의 유도 복원을 이용한 시각-언어 모델 추론 시스템 (2026)</li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+      <article class="area-card">
+        <div class="area-figure placeholder"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Generative Models</span></div>
+        <div class="area-body">
+          <h4>Diffusion &amp; World Models</h4>
+          <p class="desc">Generative models can imagine how a scene will evolve. We adapt diffusion-based video generators and world models to forecast future traffic scenes conditioned on text descriptions, using parameter-efficient adaptation so that large pretrained models can be specialized with limited data. This direction connects generative modeling with autonomous driving and simulation, and received the runner-up award in Track 5 of the 10th AI City Challenge.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>Generative Traffic Video Forecasting with Paired Future Descriptions via Parameter-Efficient World Model Adaptation, <i>ECCV Workshop 2026, Runner-up</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Theme 2 -->
+    <h3 class="theme-title">Autonomous Driving &amp; Robotics</h3>
+    <div class="area-grid">
+      <article class="area-card">
+        <div class="area-figure"><img class="cover" src="media/research/driving-segmentation-2025.jpg" alt="Semantic segmentation of a road scene"></div>
+        <div class="area-body">
+          <h4>Driving Scene Perception</h4>
+          <p class="desc">Reliable perception is the foundation of autonomous vehicles. We work on semantic segmentation, end-to-end driving models, and vehicle-to-vehicle perception that remain robust in real road environments. Our team won 1st place (of 154 teams) in the Autonomous Driving AI Challenge semantic segmentation track with the Minister of Science and ICT Award, and finished 2nd in the final round of the A1 Autonomous Driving Competition 2026.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>Autonomous Driving AI Challenge 2025 &mdash; Semantic Segmentation, <i>1st Place</i></li>
+            <li>A1 Autonomous Driving Competition 2026, <i>2nd Place</i></li>
+            <li>Real-Time Video Sharing System for Vehicle-to-Vehicle Communication, <i>ICROS 2026</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+      <article class="area-card">
+        <div class="area-figure placeholder"><i class="fa-solid fa-route"></i><span>Topology &amp; Navigation</span></div>
+        <div class="area-body">
+          <h4>Lane Topology &amp; Robot Navigation</h4>
+          <p class="desc">Beyond detecting objects, autonomous agents must understand how lanes, traffic elements, and pedestrian groups relate to each other. We study lane-topology reasoning with vision-language embeddings, simulator-based HD-map parsing for scalable labels, and benchmarks that evaluate whether urban robots navigate in a socially compliant way around groups of people.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>TopoUrbanBench: Group-Structural Compliance Evaluation for Urban Robot Navigation, <i>CoRL 2026</i></li>
+            <li>Patent: 조합적 차선 기술 라벨 및 비전-언어 임베딩을 이용한 차선-교통요소 토폴로지 추론 (2026)</li>
+            <li>Patent: 시뮬레이터 기반 HD맵 파싱을 이용한 차선 위상 정보 생성 시스템 (2026)</li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+      <article class="area-card">
+        <div class="area-figure"><img src="media/publications/kros17-pose-estimation.jpg" alt="2D-3D pose estimation"></div>
+        <div class="area-body">
+          <h4>3D Object Detection &amp; 6-DoF Pose</h4>
+          <p class="desc">Estimating where objects are in 3D and how they are oriented is essential for robots, factories, and intelligent transport systems. We develop monocular 3D object detection and 6-DoF pose estimation methods, build large-scale 3D object datasets, and study viewpoint-aware recognition &mdash; continuing a long line of work on multi-view object extraction and pose estimation.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>Two-Phase Approach for Monocular Object Detection and 6-DoF Pose Estimation, <i>JEET 2024</i></li>
+            <li>A Large-scale 3D Object Dataset for 6-DoF Pose Estimation, <i>JICROS 2023</i></li>
+            <li>A Survey on Deep Learning Based Methods and Datasets for Monocular 3D Object Detection, <i>Electronics 2021</i></li>
+            <li>Salient View Selection for Visual Recognition of Industrial Components, <i>RA-L 2020</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Theme 3 -->
+    <h3 class="theme-title">Multimodal Perception &amp; Sensing</h3>
+    <div class="area-grid">
+      <article class="area-card">
+        <div class="area-figure"><img src="media/research/wifi-jepa-eccv26.png" alt="WiFi-JEPA overview"></div>
+        <div class="area-body">
+          <h4>Wireless / RF Sensing</h4>
+          <p class="desc">WiFi signals can sense people without cameras, preserving privacy and working in the dark. We learn representations of WiFi channel state information (CSI) with structure-aware self-supervised learning and link masking, enabling 3D human pose estimation from both simulated and real CSI. We also build lightweight on-device pipelines for non-contact sleep state recognition.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>WiFi-JEPA: Self-supervised Learning for WiFi-CSI 3D Human Pose Estimation, <i>ECCV 2026</i> &middot; <a href="https://wifi-jepa.github.io/" target="_blank">Project</a></li>
+            <li>Non-contact Sleep State Recognition Using Wi-Fi CSI, <i>ICROS 2026</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+      <article class="area-card">
+        <div class="area-figure placeholder"><i class="fa-solid fa-film"></i><span>Video Segmentation</span></div>
+        <div class="area-body">
+          <h4>Referring Video Object Segmentation</h4>
+          <p class="desc">Given a natural-language expression, the goal is to segment the referred object across every frame of a video &mdash; or to recognize that it does not appear at all. We combine multi-agent target-existence verification with learned mask-geometry refinement to produce accurate, temporally consistent masks. Our approach won 1st place in the MeViS-Text track of the 8th LSVOS Challenge (ECCV 2026 Workshop).</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>Multi-Agent Target-Existence Verification and Learned Mask Geometry Refinement, <i>ECCV Workshop 2026, 1st Place</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+      <article class="area-card">
+        <div class="area-figure placeholder"><i class="fa-solid fa-image"></i><span>AI-Generated Content</span></div>
+        <div class="area-body">
+          <h4>AI-Generated Image Detection &amp; Content Creation</h4>
+          <p class="desc">As generative AI produces ever more realistic media, it becomes important both to create multimodal content and to tell real from synthetic. We study detectors for AI-generated images, test-time robustness of vision models via VLM-based verification, and multimodal content creation. Our team placed 2nd in the AI Generated Images Detection track at the CVPR 2026 competition.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>AI Generated Images Detection, <i>CVPR 2026 Competition, 2nd Place</i></li>
+            <li>Selective Test-Time Robustness Enhancement via VLM-based Verification, <i>ICROS 2026</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Theme 4 -->
+    <h3 class="theme-title">Language, Human &amp; Real-World Applications</h3>
+    <div class="area-grid">
+      <article class="area-card">
+        <div class="area-figure placeholder"><i class="fa-solid fa-language"></i><span>Machine Translation</span></div>
+        <div class="area-body">
+          <h4>Machine Translation &amp; Evaluation</h4>
+          <p class="desc">How do we know whether a translation of a whole document is good? We study document-level translation evaluation, discourse-aware measures of translation difficulty, and automated quality estimation, as well as multi-agent prompt chaining for LLM-based translation. Recent work appears at the EMNLP 2026 main conference and the WMT 2026 shared task.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>The Blindness of Document-Level Translation Evaluation, <i>EMNLP 2026</i></li>
+            <li>Discourse Dependency: A Continuous Criterion for Translation Difficulty, <i>EMNLP 2026</i></li>
+            <li>FACET at WMT 2026 Automated Translation Quality Evaluation Task, <i>WMT 2026</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+      <article class="area-card">
+        <div class="area-figure placeholder"><i class="fa-solid fa-user"></i><span>Talking Heads</span></div>
+        <div class="area-body">
+          <h4>Talking Head Generation</h4>
+          <p class="desc">Talking head generation synthesizes a realistic speaking face from audio or text. We focus on cross-lingual talking heads that keep lip motion natural across languages, robust 3D face alignment, and semantic regularization of visual features using vision-language anchors. This research is supported by the NRF Basic Research Program.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>A Study of Cross-lingual Talking Head Generation, <i>ICROS 2026</i></li>
+            <li>Patent: 강건한 3D 얼굴 정렬 시스템 (2026)</li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+      <article class="area-card">
+        <div class="area-figure placeholder"><i class="fa-solid fa-heart-pulse"></i><span>Healthcare &amp; Finance</span></div>
+        <div class="area-body">
+          <h4>Healthcare &amp; Financial AI</h4>
+          <p class="desc">We bring visual and machine intelligence to domains where decisions matter. In healthcare, we study multiple-instance learning on whole-slide images for survival prediction and machine learning for disease prediction. In finance and economics, we work on Financial AI together with industry partners and explainable machine learning for trade and industrial data.</p>
+          <p class="related-label">Related work</p>
+          <ul class="related">
+            <li>A Study of MIL Aggregation Methods for WSI-based Survival Prediction, <i>ACK 2026</i></li>
+            <li>Public Enterprise Decline and the Industrial Replacement Gap in Nepal, <i>Sustainability 2026</i></li>
+            <li>RNN-CNN Based Cancer Prediction Model for Gene Expression, <i>IEEE Access 2023</i></li>
+          </ul>
+          <button class="learn-more" type="button" aria-expanded="false">Learn More</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="collapsible" data-more="Show all projects">
+    <h3>Projects</h3>
+    <dl class="project-list">
+      <dt>2026 ~ 2030</dt><dd>AX기반제조공정활용기술 전문인력양성 <span class="agency">· 한국산업기술진흥원</span></dd>
+      <dt>2026 ~ 2029</dt><dd>지역지능화혁신인재양성 <span class="agency">· 과학기술정보통신부</span></dd>
+      <dt>2026 ~ 2030</dt><dd>인공지능중심대학 <span class="agency">· 과학기술정보통신부</span></dd>
+      <dt>2025 ~ 2030</dt><dd>인공지능 분야 첨단산업 인재양성 부트캠프 <span class="agency">· 한국연구재단</span></dd>
+      <dt>2025 ~ 2030</dt><dd>대학기초연구소지원사업 (G-LAMP - 인공지능 분야) <span class="agency">· 한국연구재단</span></dd>
+      <dt>2025 ~ 2028</dt><dd>중견연구 (창의연구형) <span class="agency">· 한국연구재단</span></dd>
+      <dt>2025 ~ 2026</dt><dd>스마트카 사업 (주관기관: KETI) <span class="agency">· 한국산업기술기획평가원</span></dd>
+      <dt>2024 ~ 2030</dt><dd>AI융합보안대학원 <span class="agency">· 과학기술정보통신부</span></dd>
+      <dt>2023 ~ 2027</dt><dd>지능형반도체 기반 고효율 자율형 IoT 디바이스 교육연구단 <span class="agency">· 한국연구재단</span></dd>
+      <dt>2026</dt><dd>첨단 GPU 활용 지원 사업 <span class="agency">· 정보통신산업진흥원</span></dd>
+      <dt>2021 ~ 2026</dt><dd>DAY 기반 전자제조 전문인력양성 <span class="agency">· 한국산업기술진흥원</span></dd>
+      <dt>2022 ~ 2024</dt><dd>하드웨어 친화적인 모델 경량화 연구 <span class="agency">· 숭실대학교</span></dd>
+      <dt>2021 ~ 2023</dt><dd>저비용 고신뢰 자율주행차를 위한 임베디드 클러스터 컴퓨팅 및 딥러닝 경량화 기술, 기초연구실 2세부 <span class="agency">· 한국연구재단</span></dd>
+      <dt>2021 ~ 2023</dt><dd>지능형 교통 체계를 위한 단일 시점의 3D 객체 검출 방법론 연구 <span class="agency">· 한국연구재단</span></dd>
+      <dt>2022</dt><dd>행동 인식 데이터베이스 구축 및 학습 유효성 검증 소프트웨어 개발 <span class="agency">· 한국전자기술연구원</span></dd>
+      <dt>2022</dt><dd>학제간 융합 연구 과제, 기초과학융합연구소 <span class="agency">· 숭실대학교</span></dd>
+      <dt>2021 ~ 2022</dt><dd>신임교원 지원 과제 <span class="agency">· 숭실대학교</span></dd>
+      <dt>2021</dt><dd>객체 3D AI 데이터 구축 사업 <span class="agency">· 한국지능정보사회진흥원</span></dd>
+      <dt>2021</dt><dd>인체 3D 골격추정 인공지능 학습모델 연구개발 <span class="agency">· (주)위지웍</span></dd>
+      <dt>2021</dt><dd>3D 복원 엔진 개선을 위한 딥러닝 기반 최적화 및 렌더링 기술 개발 <span class="agency">· 한국전자기술연구원</span></dd>
+      <dt>2020 ~ 2021</dt><dd>LINC+ 4차 산업혁명 혁신선도대학 <span class="agency">· 한국연구재단</span></dd>
+      <dt>2020</dt><dd>클라우드 플랫폼에서의 영상 기반 구조 복원 및 특징점 기반 자세 추정 SW <span class="agency">· 한국전자기술연구원</span></dd>
+      <dt>2020</dt><dd>딥러닝 기반 객체 검출/추적 및 분석 엔진 SW 개발 <span class="agency">· 한국전자기술연구원</span></dd>
+    </dl>
+  </section>
+
+  <section>
+    <h3>Research Funding</h3>
+    <ul class="name-list">
+      <li>Soongsil University (숭실대학교)</li>
+      <li>National Research Foundation of Korea (한국연구재단)</li>
+      <li>Korea Institute for Advancement of Technology (한국산업기술진흥원)</li>
+      <li>Korea Electronics Technology Institute (한국전자기술연구원)</li>
+      <li>National Information Society Agency (한국지능정보사회진흥원)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Copyright 2020&ndash;2026 SSU VIP Lab. All rights reserved.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
